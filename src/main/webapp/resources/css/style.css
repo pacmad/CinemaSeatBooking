@@ -1,0 +1,21 @@
+.row input {
+	display: inline-block;
+			margin-left: 10px;
+			padding: 5px;			
+			text-align: center;
+			width: 40px;
+			height: 40px;
+			color: #999999;
+}
+
+.availableSeat {
+	background: #00FF00;
+}
+
+.occupiedSeat {
+	background: #FF0000;
+}
+	
+.row {
+	margin-bottom: 10px;	
+}

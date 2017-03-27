@@ -5,9 +5,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class IndexController {
+	
 
 	@RequestMapping("/")
-	public String getRequest() {
+	public String returnStartingPage() {
 		return "index";
-	}
+	} 	
 }
