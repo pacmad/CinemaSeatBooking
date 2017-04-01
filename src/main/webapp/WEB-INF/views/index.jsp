@@ -25,9 +25,10 @@
 	<h1>Start page of YourCinema seat booking</h1>
 	<form method="post" action="">		
 	<input type="submit" value="Reserve"/>
+	<input type="button" value="TEST BUTTON" class="testClass"/>
 	
-	<input type="hidden" name="seatsSelected" value="0"/>
-	<input type="hidden" name="selectedIds" value="0"/>
+	<input type="hidden" name="seatsSelected" class="seatsSelectedField" value="78"/>
+	<input type="hidden" name="selectedIds" class="selectedIdsField" value="77f"/>
 	
 	<%
 		out.print(helper.generateSeatLayout());

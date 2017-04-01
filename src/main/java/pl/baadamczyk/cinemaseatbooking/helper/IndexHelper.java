@@ -11,12 +11,13 @@ public class IndexHelper {
 	
 	public String generateSeatLayout() {
 		StringBuilder layoutMarkup = new StringBuilder();
+		
 		for(int i = 0; i < Rows; i++) {
 			layoutMarkup.append("<div class=\"row\">");
 			for(int j = 0; j < SeatsInRow; j++) {
 				String seatID = (i+1)+"-"+(j+1);
 				if(SeatArray[i][j]) {						
-					layoutMarkup.append("<input type=\"button\" class=\"availableSeat\" value=\""+seatID+"\" onclick=\"reserveSeat("+seatID+")\"/>"); //TODO: add JS onClick action to available seats 
+					layoutMarkup.append("<input type=\"button\" class=\"availableSeat\" value=\""+seatID+"\"/>"); 
 				} else {
 					layoutMarkup.append("<input type=\"button\" class=\"occupiedSeat\" value=\""+seatID+"\"/>");
 				}
